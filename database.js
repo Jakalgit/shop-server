@@ -8,5 +8,8 @@ module.exports = new Sequelize(
         dialect: 'postgres',
         host: 'ec2-34-235-198-25.compute-1.amazonaws.com',
         port: '5432',
+        ssl: {
+            rejectUnauthorized: false
+        }
     },
 )
